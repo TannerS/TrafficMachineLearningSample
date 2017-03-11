@@ -1,8 +1,5 @@
 ## Prompt
 
-Directions
-Let’s build a simple prototype to predict the traffic! 
-
 diction dataset schema:
 
 <road id, direction, dayOfWeek, timeOfDay>  =>  <traffic status>
