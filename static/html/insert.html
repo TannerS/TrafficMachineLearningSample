@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Insert new data</title>
+
+        <script src="/static/js/jquery/jquery.min.js"></script>
+
+        <script src="/static/js/bootstrap/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="/static/css/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="/static/css/bootstrap/bootstrap-theme.min.css">
+
+        <script src="/static/js/angular/angular.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="/static/css/angular/angular-csp.css">
+
+        <script src="/static/js/controllers/InsertController.js"></script>
+
+        <style>
+
+            body {
+
+                margin: 20px 0 0;
+            }
+
+            #insert_form {
+
+                justify-content: center;
+                align-items: center;
+            }
+
+        </style>
+
+    </head>
+    <body ng-app="H3">
+        <div ng-controller="insert_controller" class="container" ng-cloak>
+            <form id="insert_form" class="form-horizontal">
+                <div class="form-group" for="road_id">
+                    <label for="road_id">Road ID:
+                        <input type="number" id="road_id" name="road_id" ng-model="road_id" class="form-control" style="width:50%" >
+                    </label>
+                </div>
+                <div class="form-group" class="col-xs-5 col-md-3 col-lg-1 vcenter">
+                     <label for="direction">Direction:
+                        <input type="number" id="direction" name="direction" ng-model="direction" class="form-control" style="width:50%" >
+                     </label>
+                </div>
+                <div class="form-group">
+                    <label for="day_of_week">Day of Week:
+                        <input type="number" id="day_of_week" name="day_of_week" ng-model="day_of_week" class="form-control" style="width:50%" >
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="time_of_day">Time of Day:
+                        <input type="number" id="time_of_day" name="time_of_day" ng-model="time_of_day" class="form-control" style="width:50%" >
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="traffic_status">Traffic Status:
+                        <input type="number" id="traffic_status" name="traffic_status" ng-model="traffic_status" class="form-control" style="width:50%" >
+                    </label>
+                </div>
+                <div class="form-group">
+                    <button ng-click="insert()" class="btn btn-primary">Insert Data</button>
+                </div>
+            </form>
+
+            <h4>{{ result }}</h4>
+
+        </div>
+    </body>
+</html>
