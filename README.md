@@ -1,8 +1,6 @@
 ## Prompt
 
-diction dataset schema:
-
-"<road id, direction, dayOfWeek, timeOfDay>  =>  <traffic status>"
+"< road id, direction, dayOfWeek, timeOfDay >  => < traffic status >"
 
 "<10, 0, 1, 8> => <8>"    // for I-10 west, Monday at 8am, the traffic is 8 (1-10)
 
